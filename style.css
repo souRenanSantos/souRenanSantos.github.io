@@ -1,0 +1,214 @@
+/* Global */
+
+/* Paleta de cores */
+:root {
+  --cor-primaria: #284b63;
+  --cor-secundaria: #ffffff;
+  --cor-texto: #353535;
+  --cor-background: #d9d9d9;
+  --cor-destaque: #3c6e71;
+}
+
+/* Estilização geral */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: var(--cor-background);
+  color: var(--cor-texto);
+}
+
+/* Estilização do cabeçalho */
+header {
+  background-color: var(--cor-primaria);
+  padding: 20px;
+  position: relative;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 4em;
+  color: var(--cor-secundaria);
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+/* Estilização do menu */
+.navbar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline;
+  margin: -3px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: var(--cor-texto);
+  font-size: 1.4em;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: var(--cor-secundaria);
+  transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: var(--cor-secundaria);
+  background-color: var(--cor-texto);
+}
+
+/* Estilização geral do conteúdo */
+main {
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-top: 0;
+  color: var(--cor-primaria);
+}
+
+h3 {
+  font-size: 1.4em;
+  margin-top: 30px;
+  color: var(--cor-destaque);
+  border-bottom: 2px solid var(--cor-destaque);
+  padding-bottom: 10px;
+}
+
+p {
+  margin-top: 10px;
+}
+
+
+/* Sobre mim */
+/* Estilização dos tópicos de Cursos e certificados*/
+.list {
+  list-style-type: none;
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+.list-item {
+  list-style-type: disc;
+  margin-bottom: 5px;
+  font-weight: normal;
+}
+
+.list-item a {
+  color: var(--cor-destaque);
+}
+
+.list-item a:hover {
+  text-decoration: underline;
+}
+
+
+/* Formação */
+/* Estilização da tabela de disciplinas cursadas */
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: var(--cor-secundaria);
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+  padding: 6px;
+  border-bottom: 1px solid var(--cor-texto) ;
+  text-align: center;
+}
+
+table th {
+  padding: 12px;
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+  text-align: center;
+}
+
+table tbody tr:hover {
+  background-color: var(--cor-background);
+}
+
+
+/* Portólio */
+/* Estilização de projetos */
+article {
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+iframe {
+  display: block;
+  width: 100%;
+  height: 1000px;
+  border: none;
+}
+
+
+/* Contato */
+/* Estilização de formulário */
+form {
+  width: 80%;
+  margin: 20px auto;
+  background-color: var(--cor-secundaria);
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--cor-texto);
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--cor-background);
+  border-radius: 4px;
+}
+
+form textarea {
+  height: 100px;
+  resize: none;
+}
+
+form input[type="submit"] {
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: var(--cor-texto);
+}

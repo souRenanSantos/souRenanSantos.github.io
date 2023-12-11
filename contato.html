@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- Metadados -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Contato</title> <!-- Título da página-->
+  
+  <link rel="stylesheet" href="style.css"> <!-- Link para a folha de estilo -->
+</head>
+
+<body>
+  <header>
+    <!-- Cabeçalho -->
+    <h1>Renan Renato dos Santos</h1> <!-- Título principal -->
+    
+    <!-- Menu principal-->
+    <nav class="navbar">
+      <ul>
+        <!-- Lista de links de navegação -->
+        <li><a href="index.html">Sobre</a></li>
+        <li><a href="formacao.html">Formação</a></li>
+        <li><a href="portfolio.html">Portfólio</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Seção principal -->
+    <h2>Contato</h2> <!-- Título da página "Contato" -->
+
+    <!-- Formulário de contato -->
+    <form action="#" method="POST"> <!-- Formulário com método POST -->
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required> <!-- Campo de entrada para o nome -->
+      <br><br>
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required> <!-- Campo de entrada para o e-mail -->
+      <br><br>
+      <label for="mensagem">Mensagem:</label><br>
+      <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea> <!-- Campo de entrada para a mensagem -->
+      <br><br>
+      <input type="submit" value="Enviar"> <!-- Botação de envio do formulário -->
+    </form>
+  </main>
+</body>
+</html>
